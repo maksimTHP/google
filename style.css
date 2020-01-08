@@ -1,0 +1,203 @@
+/*
+Réglage généraux par défaut de ma page web
+*/
+html{
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  font-family: sans-serif;
+}
+
+
+/* Formatage des liens, ils seront tous comme ca! */
+a {
+  text-decoration: none;
+  color: black;
+  font-family: sans-serif;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Passe mon conteneur (body) en flex pour la mise en page */
+#conteneur{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+
+}
+
+
+/* Positionnement du logo et de sa div */
+#logo {
+  padding-top: 148px;
+  width: 272px;
+}
+
+/* Positionnement et mise en forme de la barre de recherche */
+#search {
+  width: 560px;
+  height: 44px;
+  border-radius: 46px;
+  border: 1px solid #eaeaea;
+}
+
+/* MouseHover pour la barre de recherche */
+#search:hover {
+  box-shadow:0px 2px 2px #dadadb;
+}
+
+#search:focus {
+  outline: none;
+}
+
+/* Alignement du header sur la droite / Largeur de la page à 100% du conteneur */
+#header {
+text-align: right;
+width: 100%;
+
+}
+
+/* Positionnement et mise en forme de la classe qui gère les boutons */
+.boutons {
+  padding-top: 30px;
+  width: 300px;
+}
+
+/* Mise en forme de mon bouton de recherche */
+#RechercheBouton {
+  width: 150px;
+  height:36px;
+  border-radius: 6px;
+  background-color: #F4F4F4;
+  border: 1px solid #f2f2f2;
+}
+
+/* Positionnement et mise en forme de mon bouton "J'ai de la chance" */
+#ChanceBouton {
+  width: 137px;
+  height:36px;
+  border-radius: 6px;
+  background-color: #F4F4F4;
+  border: 1px solid #f2f2f2;
+}
+
+/* Hover sur mon bouton de recherche */
+#RechercheBouton:hover{
+  border: 1px solid #c6c6c6;
+  box-shadow:0px 1px 2px #dadadb;
+
+}
+
+/* Hover sur mon bouton "J'ai de la chance" */
+#ChanceBouton:hover{
+  border: 1px solid #c6c6c6;
+  box-shadow:0px 1px 2px #dadadb;
+
+}
+
+/* Positionnement de la div qui contient la barre de recherche */
+#barrederecherche {
+  margin-top: 30px;
+
+}
+
+
+
+/* Mise en forme du texte lors de la saisie dans la barre de recherche */
+input[type=search] {
+  padding-left: 15px;
+  font-size: 17px;
+  font-family: sans-serif;
+  }
+
+/* Mise en forme du bouton de connexion */
+#connexion {
+    width: 93px;
+    height:30px;
+    border-radius: 1px;
+    background: #4486F8;
+    color: white;
+    font-size: 14px;
+    }
+
+/* Mise en forme de la div du logo "application" de google */
+#application {
+  width: 18px;
+}
+/* Mise en forme du header */
+#header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 8px;
+
+}
+
+/* Class qui permet de gérer le margin de la Nav */
+.margin_nav{
+  margin-right: 10px;
+
+}
+
+/* Mise en Flex End, le display flex et hérité par le display du footer */
+#footer_div{
+  justify-content: flex-end;
+}
+
+/* Mise en forme et en place de la div globale du footer */
+footer{
+  font-size: 14px;
+  display: flex;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  height: auto;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f2f2f2;
+  margin-bottom: 10px;
+}
+
+/* Le footer est divisé en deux afin de pouvoir gérer la partie haute et basse - Mise en place et en forme de la partie basse*/
+#FooterDown{
+  padding-top: 10px;
+  border-top: 1px solid #e4e4e4;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+/* Class qui permet de gérer le margin des deux div de la partie basse du footer */
+.marginfooter1 {
+  margin-right: 10px;
+  margin-left:10px;
+}
+
+/* Class qui permet de gérer le margin des deux div de la partie basse du footer */
+.marginfooter2 {
+  margin-left: 10px;
+}
+
+/* Mise en forme de la partie haute du footer (+ Border Top) */
+
+#FooterUp{
+  border-top: 1px solid #e4e4e4;
+  padding-left: 10px;
+}
+
+/* Mise en forme de la partie basse et gauche du footer */
+#FooterDownLeft{
+  display: flex;
+  width:33%;
+  display: flex;
+  flex-direction: row;
+}
+
+/* Mise en forme de la partie basse et droite du footer */
+#FooterDownRight{
+  width:33%;
+  display: flex;
+  flex-direction: row;
+}
